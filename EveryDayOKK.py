@@ -9,18 +9,7 @@ from sshtunnel import SSHTunnelForwarder
 from sqlalchemy import create_engine
 import xlsxwriter
 ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>enter connection`s form"
-sql_hostname = '127.0.0.1'
-sql_username = 'VLegoida'
-sql_password = 'HNtSWOi60zz!'
-sql_main_database = 'creditone'
-sql_reserve_database = 'creditone_1'
-sql_port = 3306
-ssh_host = '10.1.32.75'
-ssh_user = 'VLegoida'
-ssh_password='HNtSWOi60zz!'
-ssh_port = 22
-host = '127.0.0.1'
-
+`````````sory corporative etique  :D 1```````````````
 ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>query enter set"
 ###
 """pd.set_option('max_rows', 5)
@@ -122,10 +111,10 @@ def zapyt(query, db):
 		#підключення для запиту з основної
 	        (ssh_host, ssh_port),
 	        ssh_username=ssh_user,
-	        ssh_password='HNtSWOi60zz!',
+	        ssh_password='H',
 	        remote_bind_address=(sql_hostname, sql_port)) as tunnel:
 
-	    conn = pymysql.connect(host='127.0.0.1', user=sql_username, passwd=sql_password, db=db, port=tunnel.local_bind_port)
+	    conn = pymysql.connect(host='1', user=sql_username, passwd=sql_password, db=db, port=tunnel.local_bind_port)
 
 	    data = pd.read_sql_query(query, conn)
 
